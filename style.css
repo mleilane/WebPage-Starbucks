@@ -178,4 +178,9 @@ button:hover {
   }
 }
 
+@media (max-width: 430px) {
+  .circulo {
+    clip-path: circle(200px at right 40%); /* Ajusta o tamanho do círculo e a posição para telas menores */
+  }
 
+}
