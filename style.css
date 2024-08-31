@@ -178,9 +178,4 @@ button:hover {
   }
 }
 
-@media (max-width: 430px) {
-  .circulo {
-    display: none; /* Oculta o círculo em telas menores */
-  }
 
-}
