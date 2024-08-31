@@ -13,7 +13,8 @@
     <title>Starbucks</title>
   </head>
   <body>
-    <div class="circulo"> </div> <!-- Criar o efeito de circulo da imagem -->
+    <div class="circulo"></div>
+    <!-- Criar o efeito de circulo da imagem -->
 
     <img src="./img/logo.png" class="logo" />
 
@@ -29,7 +30,7 @@
           provident, unde nam iusto distinctio exercitationem ab optio
           necessitatibus rem et debitis fuga.
         </p>
-        <button>Learn More!</button>
+        <button>Feedback Rápido 😉</button>
       </div>
 
       <div class="caixa-imagem">
@@ -38,9 +39,27 @@
     </div>
 
     <div class="menu">
-      <img src="./img/img-pequena1.png" class="botao-menu" />
-      <img src="./img/img-pequena2.png" class="botao-menu" />
-      <img src="./img/img-pequena3.png" class="botao-menu" />
+      <!-- incluso o onclik para capturar o clique na imagem e chamar a função que vai substituir ela-->
+      <!-- Dentro de cada função trocaImagem(), tem o parametro que será enviado, que no caso é o caminho da imagem -->
+      <!-- Dentro da função trocaCorCirculo(), tem -->
+      <img
+        src="./img/img-pequena1.png"
+        class="botao-menu"
+        onclick="trocaImagem('./img/img1.png'); trocaCorCirculo('#017143')"
+      />
+
+      <img
+        src="./img/img-pequena2.png"
+        class="botao-menu"
+        onclick="trocaImagem('./img/img2.png'); trocaCorCirculo('#eb7495')"
+      />
+      <img
+        src="./img/img-pequena3.png"
+        class="botao-menu"
+        onclick="trocaImagem('./img/img3.png'); trocaCorCirculo('#d752b1')"
+      />
     </div>
   </body>
+
+  <script src="./script.js"> </script>
 </html>

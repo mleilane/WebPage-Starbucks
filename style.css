@@ -6,9 +6,9 @@
 }
 
 body {
-  padding-top: 20px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-top: 20px; /* espaçamento superior */
+  padding-right: 100px; /* espaçamento direita */
+  padding-left: 100px; /* espaçamento esquerda */
 }
 
 .conteudo {
@@ -19,19 +19,19 @@ body {
 }
 
 .caixa-texto {
-  width: 500px;
+  width: 500px; /* largura*/
 }
 
 .caixa-imagem {
   width: 300px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 100px;
+  margin-top: 100px; /*margem superior */
 }
 
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centraliza os itens na horizontal*/
 }
 .logo {
   width: 50px;
@@ -44,7 +44,7 @@ body {
 
 .botao-menu {
   width: 60px;
-  cursor: pointer;
+  cursor: pointer; /* altera a aparecencia do cursor (maozinha) quando passa sobre o elemento */
   transition: 1s; /* auxilia o transform do hover deixando + suave */
   margin: 10px;
 }
@@ -55,10 +55,10 @@ body {
 }
 
 h2 {
-  gap: 20px;
-  color: #333;
-  font-size: 40px;
-  font-weight: 500;
+  gap: 20px; /* distancia os itens*/
+  color: #333; /* cor do texto */
+  font-size: 40px; /* tamanho do texto */
+  font-weight: 500; /* espessura do texto */
 }
 
 span {
@@ -74,13 +74,23 @@ p {
 }
 
 button {
-  background: #017143;
+  background: #017143; /* cor de fundo*/
   color: #ffffff;
-  border-radius: 18px;
-  border: none;
+  border-radius: 18px; /* cantos da borda arredondadas*/
+  border: none; /* sem borda*/
   cursor: pointer;
-  padding: 12px;
-  margin-top: 20px;
+  padding: 12px; /*espaçamento dos itens */
+  margin-top: 20px; /* margem superior */
+
+  font-size: 16px;
+  font-weight: 400;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animação suave para transformações */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+}
+
+button:hover {
+  transform: translateY(-4px); /* Eleva o botão ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para realçar o efeito 3D */
 }
 
 .circulo {
@@ -97,4 +107,61 @@ button {
   clip-path: circle(380px at right 500px);
 
   z-index: -1; /*faz o cirulo ficar por tras dos demais elementos*/
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza o conteúdo na coluna */
+  }
+
+  .caixa-texto {
+    text-align: center; /* centraliza o texto*/
+  }
+
+  .caixa-imagem {
+    display: none; /* Remove a imagem grande em telas menores */
+  }
+
+  .logo {
+    align-self: flex-start; /* Mantém o logo no canto superior esquerdo */
+  }
+
+  .menu {
+    align-items: center;
+  }
+
+  .botao-menu {
+    margin-top: 70px;
+    margin-bottom: 10px; /* Adiciona espaçamento entre as imagens do menu */
+  }
+
+  .circulo {
+    position: absolute; /* Define posição absoluta */
+    background: #017143; /* Cor de fundo */
+    width: 100%; /* Ocupa 100% da largura */
+    height: 100%; /* Ocupa 100% da altura */
+
+    /* Ajuste de posição para mover o círculo para baixo */
+    top: 190px; /* Altere o valor para controlar a distância do topo */
+    left: 0;
+
+    /* Cria o efeito de círculo */
+    clip-path: circle(380px at right 500px);
+
+    z-index: -1; /* Faz o círculo ficar por trás dos demais elementos */
+  }
+
+  h2 {
+    font-size: 20px; /* tamanho do texto */
+  }
+
+  span {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
