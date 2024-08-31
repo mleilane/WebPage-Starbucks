@@ -111,13 +111,20 @@ button:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
   .conteudo {
     flex-direction: column; /* Alinha os itens em coluna */
     align-items: center; /* Centraliza o conteúdo na coluna */
   }
 
   .caixa-texto {
-    text-align: center; /* centraliza o texto*/
+    width: 100%; /* Garante que o elemento ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+
+    text-align: justify; /* Justifica o texto */
   }
 
   .caixa-imagem {
@@ -125,6 +132,7 @@ button:hover {
   }
 
   .logo {
+    margin-top: 30px;
     align-self: flex-start; /* Mantém o logo no canto superior esquerdo */
   }
 
@@ -148,12 +156,13 @@ button:hover {
     left: 0;
 
     /* Cria o efeito de círculo */
-    clip-path: circle(380px at right 500px);
+    clip-path: circle(380px at right 490px);
 
     z-index: -1; /* Faz o círculo ficar por trás dos demais elementos */
   }
 
   h2 {
+    margin-top: 25px;
     font-size: 20px; /* tamanho do texto */
   }
 
@@ -163,5 +172,14 @@ button:hover {
 
   p {
     font-size: 15px;
+    margin: 0; /* Remove a margem padrão do parágrafo */
+
   }
+}
+
+@media (max-width: 430px) {
+  .circulo {
+    display: none; /* Oculta o círculo em telas menores */
+  }
+
 }
