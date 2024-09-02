@@ -7,7 +7,7 @@ A página simula uma interface visual para um café, inspirada na Starbucks, e d
 * Aqui estão algumas capturas de tela do projeto:
 
 ## 🔗 Link para o Deploy
-* Veja a versão ao vivo do projeto aqui: <a href="https://mleilane.github.io/WebPage-Starbucks/">  Starbucks Webpage </a>
+* Veja a versão ao vivo do projeto aqui: <a href="https://webpage-strbucks.netlify.app/">  Starbucks Webpage </a>
 
 ## 📦 Funcionalidades
 * Troca de Imagens: Clique nos botões do menu para alterar a imagem principal e a cor do círculo de fundo.
