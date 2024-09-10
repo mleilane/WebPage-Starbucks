@@ -3,8 +3,6 @@
 Este é um projeto criado com o objetivo de praticar HTML, CSS e JavaScript, desenvolvido durante o curso do Dev Club. 
 A página simula uma interface visual para um café, inspirada na Starbucks, e demonstra a aplicação de conceitos fundamentais dessas tecnologias.
 
-## 📸 Capturas de Tela
-* Aqui estão algumas capturas de tela do projeto:
 
 ## 🔗 Link para o Deploy
 * Veja a versão ao vivo do projeto aqui: <a href="https://webpage-strbucks.netlify.app/">  Starbucks Webpage </a>
